@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana;
+}
+:root{
+    --textColor: #b68f4d;
+    --bgColor: #212121
+}
+.bg{
+    background-image: url("img/bg-img.jpg");
+    height: 600px;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    padding-top: 12rem;
+}
+
+/*NavBar CSS*/
+.navbar{
+    background-color: var(--bgColor);
+}
+.navbar .navbar-brand h2{
+    font-weight: 700;
+    transition: transform .2s ease-in;
+}
+.navbar .navbar-brand h2:hover{
+    transform: translateY(-10px);
+}
+.navbar a{
+    text-align: center;
+}
+.navbar .nav-link{
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 .7rem;
+    position: relative;
+}
+.navbar .nav-link:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    border-bottom: 1px solid var(--textColor);
+    transition: 0.3s ease-in;
+}
+.navbar .nav-link:hover:after {
+    width: 100%;
+}
+
+/*Content CSS*/
+.content{
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+    /*width: 100%;*/
+    /*margin: 10rem 2rem;*/
+}
+.content h1{
+    color: var(--textColor);
+    font-weight: 700;
+    letter-spacing: .3rem;
+    font-size: 4rem;
+}
+.content p{
+    font-weight: 700;
+}
+.navbar a, .content p, .btn, .btn-1:hover{
+    color: var(--textColor);
+}
+/*Buttons CSS*/
+.btn{
+    padding: 1rem 4.3rem;
+    border-radius: 1.8rem;
+    margin: .5rem;
+    font-weight: bold;
+}
+.btn-1{
+    background-color: var(--textColor);
+    color: var(--bgColor);
+}
+.btn-1:hover{
+    background-color: transparent;
+    border: 1px solid var(--textColor);
+    box-shadow: 13px 13px 20px -1px rgba(0,0,0,0.75);
+}
+.btn-2{
+    background-color: transparent;
+    border: 1px solid var(--textColor);
+}
+.btn-2:hover{
+    background-color: var(--textColor);
+    color: var(--bgColor);
+    box-shadow: 13px 13px 20px -1px rgba(0,0,0,0.75);
+}
+/*Contact Num CSS*/
+ .contact{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: var(--textColor);
+    letter-spacing: -1px;
+    transition: .2s ease-in;
+}
+.contact:hover{
+    letter-spacing: 2px;
+}
+/*Media Queries*/
+/*@media (min-width: 768px) and (max-width: 1000px){*/
+/*    .navbar .nav-link{*/
+/*        font-size: .8rem;*/
+/*    }*/
+/*    .content h1{*/
+/*        font-size: 3rem;*/
+/*    }*/
+/*}*/
+@media (max-width: 768px) {
+    .navbar{
+        padding-top: 1rem;
+    }
+/*    .navbar .nav-link{*/
+/*        font-size: .8rem;*/
+/*        margin: 0;*/
+/*    }*/
+/*    .navbar .navbar-brand h2{*/
+/*        font-weight: 600;*/
+/*    }*/
+    .content{
+        margin: 8rem 2rem;
+    }
+/*    .content h1{*/
+/*        font-size: 2.2rem;*/
+/*    }*/
+/*    .content p{*/
+/*        font-weight: 600;*/
+/*    }*/
+/*    .btn{*/
+/*        padding: .8rem 2.7rem;*/
+/*    }*/
+}
