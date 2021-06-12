@@ -10,7 +10,7 @@
 }
 .bg{
     background-image: url("img/bg-img.jpg");
-    height: 600px;
+    height: 1000px;
     position: relative;
     background-position: center;
     background-repeat: no-repeat;
@@ -54,12 +54,7 @@
 
 /*Content CSS*/
 .content{
-    /*position: absolute;*/
-    /*top: 50%;*/
-    /*left: 50%;*/
-    /*transform: translate(-50%, -50%);*/
-    /*width: 100%;*/
-    /*margin: 10rem 2rem;*/
+    margin: 20rem 2rem;
 }
 .content h1{
     color: var(--textColor);
@@ -110,36 +105,39 @@
 .contact:hover{
     letter-spacing: 2px;
 }
-/*Media Queries*/
-/*@media (min-width: 768px) and (max-width: 1000px){*/
-/*    .navbar .nav-link{*/
-/*        font-size: .8rem;*/
-/*    }*/
-/*    .content h1{*/
-/*        font-size: 3rem;*/
-/*    }*/
-/*}*/
-@media (max-width: 768px) {
+
+/*Media Query*/
+@media (min-width: 768px) and (max-width: 1000px){
     .navbar{
         padding-top: 1rem;
     }
-/*    .navbar .nav-link{*/
-/*        font-size: .8rem;*/
-/*        margin: 0;*/
-/*    }*/
-/*    .navbar .navbar-brand h2{*/
-/*        font-weight: 600;*/
-/*    }*/
-    .content{
-        margin: 8rem 2rem;
+    .bg{
+        height: 1500px;
     }
-/*    .content h1{*/
-/*        font-size: 2.2rem;*/
-/*    }*/
-/*    .content p{*/
-/*        font-weight: 600;*/
-/*    }*/
-/*    .btn{*/
-/*        padding: .8rem 2.7rem;*/
-/*    }*/
+    .navbar .nav-link{
+        font-size: 1.5rem;
+        margin: 0 1.2rem;
+    }
+    .navbar .navbar-brand h2{
+        font-weight: 600;
+        font-size: 3rem;
+    }
+    .content{
+        margin: 17rem 2rem;
+    }
+    .content h1{
+        font-size: 5rem;
+    }
+    .content p{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .btn{
+        font-size: 2rem;
+        border-radius: 2.5rem;
+        padding: 1rem 6rem;
+    }
+    .contact h5{
+        font-size: 2rem;
+    }
 }
